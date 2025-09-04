@@ -48,6 +48,10 @@ You need to setup a HTTPS environment when developing a WebRTC feature for your 
 
 You can host your application in [skapi.com](https://www.skapi.com) or host from your personal servers.
 
+## Live Demo
+
+You can check our live demo [Here](https://skapi-webrtc-html-template.skapi.com/).
+
 ## Important!
 
 Replace the `SERVICE_ID` and `OWNER_ID` value to your own service in `service.js`
