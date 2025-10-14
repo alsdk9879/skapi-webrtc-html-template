@@ -16,66 +16,44 @@
 <script src="service.js"></script>
 
 <script>
-  /*
+    /*
         Check if the user is logged in.
         If the user is logged in, redirect the user to welcome page.
     */
-  skapi.getProfile().then((user) => {
-    if (user) {
-      location.href = 'welcome.html';
-    }
-  });
+    skapi.getProfile().then((user) => {
+        if (user) {
+            location.href = "welcome.html";
+        }
+    });
 </script>
 
 <style>
-  ul li {
-    margin-top: 4px;
-  }
+    ul li {
+        margin-top: 4px;
+    }
 </style>
 
 <main>
-  <h1>Skapi HTML Video Call Example</h1>
-  <p>This is a HTML example for building basic video call application using Skapi's webrtc features.</p>
-  <p>Users must login to request or receive video calls.</p>
-  <p>This example features:</p>
-  <ul>
-    <li>List available receivers</li>
-    <li>Requesting video call</li>
-    <li>Receive incomming video call</li>
-    <li>Hangup incomming, outgoing calls</li>
-  </ul>
-  <p>All the main code is in welcome.html</p>
+    <h1>Skapi HTML Video Call Example</h1>
+    <p>
+        This is a HTML example for building basic video call application using
+        Skapi's webrtc features.
+    </p>
+    <p>Users must login to request or receive video calls.</p>
+    <p>This example features:</p>
+    <ul>
+        <li>List available receivers</li>
+        <li>Requesting video call</li>
+        <li>Receive incomming video call</li>
+        <li>Hangup incomming, outgoing calls</li>
+    </ul>
+    <p>All the main code is in welcome.html</p>
 
-  <br />
-  <h2>Recommended VSCode Extention</h2>
-  <p>For HTML projects we often tend to use element.innerHTML.</p>
-  <p>So we recommend installing innerHTML string highlighting extention like one below:</p>
-  <a href="https://marketplace.visualstudio.com/items/?itemName=Tobermory.es6-string-html" target="_blank">es6-string-html</a>
+    <br />
 
-  <br />
-  <br />
+    <p style="font-weight: bold">Login or Sign-up below:</p>
 
-  <h2>HTTPS REQUIRED!</h2>
-  <p>WebRTC only works on HTTPS environment. You need to setup a HTTPS environment when developing a WebRTC feature for your web application.</p>
-  <p>
-    You can host your application in
-    <a href="https://www.skapi.com/" target="_blank">skapi.com</a> or host from your personal servers.
-  </p>
-
-  <br />
-
-  <h2>Important!</h2>
-  <p>Replace the SERVICE_ID and OWNER_ID value to your own service in service.js.</p>
-  <p>
-    You can get your own service ID from
-    <a href="https://www.skapi.com" target="_blank">Skapi</a>.
-  </p>
-
-  <br />
-
-  <p style="font-weight: bold">Login or Sign-up below:</p>
-
-  <a href="login.html">Login</a>
-  |
-  <a href="signup.html">Sign-Up</a>
+    <a href="login.html">Login</a>
+    |
+    <a href="signup.html">Sign-Up</a>
 </main>
