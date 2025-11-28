@@ -11,7 +11,6 @@
 */
 
 const SERVICE_ID = "";
-const OWNER_ID = "";
 
 /*
     Below, the options object is passed to the Skapi constructor.
@@ -36,4 +35,4 @@ let options = {
     },
 };
 
-const skapi = new Skapi(SERVICE_ID, OWNER_ID, options);
+const skapi = new Skapi(SERVICE_ID, options);
